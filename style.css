@@ -5,9 +5,7 @@ body {
 
 .block {
   border-radius: 25px;
-  margin: 30px;
-  /* margin-right: 30px;
-  margin-bottom: 30px; */
+  margin: 15px;
 }
 
 .container {
@@ -18,14 +16,6 @@ body {
     "header header header nav nav nav nav nav nav nav nav nav"
     ". content content content content content content content content content content ."
     "footer footer footer footer footer footer footer footer footer footer footer footer";
-        /* Solution STUDI sur body sans ajout de div (class="container")
-        display: grid;
-        grid-template-columns: 20vw 1fr;
-        grid-template-rows: 10vh 1fr 8vh;
-        grid-template-areas:
-          "header    navigation"
-          "content  content"
-          "footer    footer"; */
 }
 
 img {
@@ -46,12 +36,6 @@ h1 {
   position: absolute;
   margin-left: 2rem;
   color: white;
-}
-
-.advert {/*Découvrez nos offres partnaires */
-  margin: 2rem;
-  grid-row: 1;
-  grid-column: 2 / 4;
 }
 
 .navbar {
@@ -84,15 +68,14 @@ nav {
 .content:first-child {
   grid-row: 1/2;
   grid-column: 1;
-  /* display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr; */
 }
 
 .advert {/*Découvrez nos offres partnaires */
-  margin: 2rem;
+  margin-left: 30px;
   grid-row: 1;
   grid-column: 2 / 4;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
 }
 
 .full-row {/*Les crêpes de Laurent*/
@@ -100,6 +83,7 @@ nav {
   grid-column: 1 / 4;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  border: 1px solid black;
 }
 
 .full-row:first-child {
@@ -109,6 +93,21 @@ nav {
 
 .full-row div {
   padding-left: 2rem;
+}
+
+.verrine {
+  grid-row: 3;
+  grid-column: 1;
+}
+
+.pizza {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.tiramisu {
+  grid-row: 3;
+  grid-column: 3;
 }
 
 footer {
