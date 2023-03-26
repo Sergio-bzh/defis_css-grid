@@ -1,14 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="utf-8" />
+  <link href="./style.css" rel="stylesheet" type="text/css">
+  <link
+  href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap"
+  rel="stylesheet"
+  />
+  <title>Grid'Cuisine</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Titre de niveau 1</h1>
-  
+  <div class="container">
+    <header>
+      <h1>Grid'Cuisine</h1>
+    </header>
+    <nav>
+      <ul class="navbar">
+        <li>Entrées</li>
+        <li>Plats</li>
+        <li>Désserts</li>
+      </ul>
+    </nav>
+    <div class="content">
+      <div>
+        <div class="clickable">
+          <h2 class="img-title">
+            Saumon papilotte
+          </h2>
+          <img
+          src="https://cdn.pixabay.com/photo/2016/03/05/19/02/salmon-1238248_1280.jpg"
+          class="block"
+          />
+        </div>
+        <div class="clickable">
+          <h2 class="img-title">Boeuf romarin</h2>
+          <img
+          src="https://cdn.pixabay.com/photo/2018/10/22/22/18/steak-3766548_1280.jpg"
+          class="block"
+          />
+        </div>
+      </div>
+      <div class="block advert clickable">
+        <img
+        src="https://cdn.pixabay.com/photo/2016/09/11/13/56/rosemary-1661525_1280.jpg"
+        />
+        <div>
+          <h2>Découvrez nos offres partenaires !</h2>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+          placerat vehicula mattis. Ut aliquet, sem vel rutrum posuere, augue
+          nunc porttitor elit, quis aliquam velit odio id dolor.
+        </div>
+      </div>
+      <div class="block clickable full-row">
+        <img
+        src="https://cdn.pixabay.com/photo/2019/08/16/16/16/pancakes-4410605_1280.jpg"
+        />
+        <div>
+          <h2>Les crêpes de Laurent</h2>
+          <h3>Ingrédients</h3>
+          <ul>
+            <li>300g de farine</li>
+            <li>3 oeufs entiers</li>
+            <li>3 cuillères à soupe de sucre</li>
+            <li>2 cuillères à soupe d'huile</li>
+            <li>50g de beurre fondu</li>
+            <li>60cl de lait</li>
+            <li>5cl de rhum</li>
+          </ul>
+        </div>
+      </div>
+      <div class="clickable">
+        <h2 class="img-title">Verrine fruits</h2>
+        <img
+        src="https://cdn.pixabay.com/photo/2017/03/31/18/02/strawberry-dessert-2191973_1280.jpg"
+        class="block"
+        />
+      </div>
+      <div class="clickable">
+        <h2 class="img-title">Pizza italienne</h2>
+        <img
+        src="https://cdn.pixabay.com/photo/2017/12/10/14/47/pizza-3010062_1280.jpg"
+        class="block"
+        />
+      </div>
+      <div class="clickable">
+        <h2 class="img-title">Tiramisu fruité</h2>
+        <img
+        src="https://cdn.pixabay.com/photo/2018/04/08/21/13/dessert-3302502_1280.jpg"
+        class="block"
+        />
+      </div>
+    </div>
+    <footer>
+      Tous droits réservés et bon appétit !
+    </footer>
+  </div>
 </body>
 </html>

@@ -1,0 +1,1 @@
+Le but de ce dépot est de voir avec le prof les dificultés que je rencontre dans cet éxercise.
