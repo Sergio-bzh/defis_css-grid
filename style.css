@@ -1,13 +1,16 @@
-* {
-  background-color: rgb(255, 255, 255,);
-}
 body {
   font-family: lato;
   margin: 0;
 }
 
+.block {
+  border-radius: 25px;
+  margin: 30px;
+  /* margin-right: 30px;
+  margin-bottom: 30px; */
+}
+
 .container {
-  /* header nav .content footer */
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 150px auto 100px;
@@ -55,7 +58,7 @@ h1 {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
-  }
+}
 
 .navbar li {
   margin-top: 30px;
@@ -79,21 +82,17 @@ nav {
 }
 
 .content:first-child {
-  display: grid;
+  grid-row: 1/2;
+  grid-column: 1;
+  /* display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr; */
 }
 
-footer {
-  text-align: center;
-  border-top: 1px solid;
-  grid-area: footer;
-}
-
-.block {
-  border-radius: 25px;
-  margin: 0 30px 30px 30px ;
-/* Je pouvais mettre aussi margin-left margin-right et margin-bottom à 30px */
+.advert {/*Découvrez nos offres partnaires */
+  margin: 2rem;
+  grid-row: 1;
+  grid-column: 2 / 4;
 }
 
 .full-row {/*Les crêpes de Laurent*/
@@ -110,4 +109,10 @@ footer {
 
 .full-row div {
   padding-left: 2rem;
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid;
+  grid-area: footer;
 }
